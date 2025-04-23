@@ -1,0 +1,24 @@
+/* Animação de pulsação */
+@keyframes pulsar {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1); /* aumenta o botão */
+      opacity: 0.8; /* diminui um pouco a opacidade */
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Adicionando o efeito pulsante nos botões */
+  button, #wpp, #but, #cotacao-btn li {
+    animation: pulsar 1.5s infinite; /* 1.5 segundos para completar a animação, repetindo infinitamente */
+    transition: all 0.2s ease; /* Suaviza transições de mudança de estado */
+  }
+  
+
+
